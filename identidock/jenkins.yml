@@ -1,4 +1,4 @@
-dentidock:
+identidock:
   build: .
   expose:
     - "9090"
