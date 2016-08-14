@@ -1,12 +1,9 @@
-identidock:
+dentidock:
   build: .
-  ports:
-   - "5000:5000"
+  expose:
+    - "9090"
   environment:
-    #ENV: DEV 
-    ENV: UNIT
-  volumes:
-    - ./app:/app
+    ENV: PROD
   links:
     - dnmonster
     - redis
